@@ -16,7 +16,7 @@
 title: The Discord Homestead
 description: >- # this means to ignore newlines until "baseurl:"
   We are a community of homesteaders and enthusasts that love to chat and share our work with like minded people.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Discord" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
