@@ -5,14 +5,14 @@ layout: default
 <div class="uk-container-expand">
   <div id="page" class="uk-section-default">
     {% if page.bigimg %}
-    <div class="uk-section-large uk-light uk-background-fixed uk-background-cover uk-background-top-center" style="background-image: url({{ page.bigimg | relative_url }})">
+    <div class="uk-section-small uk-light uk-background-cover uk-background-fixed uk-background-center uk-text-center" style="background-image: url({{ page.bigimg | relative_url }})">
       <div class="intro-text uk-container uk-padding-large">
         <h3 class="uk-heading-primary">{{page.title}}</h3>
       </div>
     </div>
     {% else %}
     <div>
-      <div class="uk-container uk-padding-large">
+      <div class="uk-container uk-padding-large uk-text-center">
         <h3 class="uk-heading-primary">{{page.title}}</h3>
       </div>
     </div>
