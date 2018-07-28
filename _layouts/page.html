@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<div class="uk-container-expand">
+<div class="uk-container-expand uk-padding-remove-vertical">
   <div id="page" class="uk-section-default">
     {% if page.bigimg %}
-    <div class="uk-section-small uk-light uk-background-cover uk-background-fixed uk-background-center uk-text-center" style="background-image: url({{ page.bigimg | relative_url }})">
+    <div class="uk-section-small uk-light uk-background-cover uk-background-fixed uk-background-center uk-text-center uk-padding-remove-bottom" style="background-image: url({{ page.bigimg | relative_url }})">
       <div class="intro-text uk-container uk-padding-large">
         <h3 class="uk-heading-primary">{{page.title}}</h3>
       </div>
