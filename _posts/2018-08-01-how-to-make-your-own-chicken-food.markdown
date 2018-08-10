@@ -4,6 +4,7 @@ title: "How to Make Your Own Chicken Food"
 date: "2018-08-01 12:58:06 -0700"
 tags: [chickens, diy, animals]
 bigimg: /assets/img/chickens-header.jpg
+author: jpasholk
 ---
 
 # How to make Chicken feed yourself

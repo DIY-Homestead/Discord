@@ -30,6 +30,18 @@ paginate_path: "/blog/page:num/"
 paginate: 5
 excerpt_separator: "<!--more-->"
 
+authors:
+  jpasholk:
+    name: Josh Pasholk
+    display_name: jpasholk
+    gravatar:
+    web: https:jpasholk.com
+    twitter:
+    github:
+    youtube:
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
