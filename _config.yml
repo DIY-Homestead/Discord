@@ -28,7 +28,7 @@ plugins:
 
 paginate_path: "/blog/page:num/"
 paginate: 5
-
+excerpt_separator: "<!--more-->"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
