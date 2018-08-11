@@ -13,7 +13,7 @@ bigimg: /assets/img/homestead.jpg
 
     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-border-rounded" uk-grid>
       <div class="uk-card-media-left uk-cover-container">
-        <img data-src="{{ post.bigimg | relative_url }}" alt="" uk-cover uk-img>
+        <img data-src="{% if post.bigimg %} {{ post.bigimg | relative_url }} {% else %} {{ "/assets/img/homestead.jpg" | relative_url }} {% endif %}" alt="" uk-cover uk-img>
         <canvas width="600" height="400"></canvas>
       </div>
       <div>
