@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: The Discord Homestead
+title: Homestead Discord
 description: >- # this means to ignore newlines until "baseurl:"
-  We are a community of homesteaders and enthusasts that love to chat and share our work with like minded people.
+  A community of homesteaders and enthusasts.
 baseurl: "/Discord" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -24,6 +24,24 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate_path: "/blog/page:num/"
+paginate: 5
+excerpt_separator: "<!--more-->"
+to_top: true
+
+authors:
+  jpasholk:
+    name: Josh Pasholk
+    display_name: jpasholk
+    gravatar:
+    web: https:jpasholk.com
+    twitter:
+    github:
+    youtube:
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

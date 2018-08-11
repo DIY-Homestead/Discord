@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="uk-container-expand">
+  <div id="blog" class="uk-section-default">
+    {% if page.bigimg %}
+    <div class="uk-section-small uk-light uk-background-fixed uk-background-cover uk-background-bottom-center uk-padding-remove-bottom" style="background-image: url({{ page.bigimg | relative_url }})">
+      <div class="intro-text uk-container uk-padding-large">
+        <h2 class="uk-heading-primary">{{page.title}}</h2>
+        <p class="">
+          <span uk-icon="calendar"></span> <time class="date">{{page.date | date: "%b %d, %Y "}}</time>
+          <span uk-icon="tag"></span>
+          {% for tag in page.tags %}
+          <a class="" href="{{ site.baseurl }}/archive/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        {% assign author = site.authors[page.author] %}
+        <section class="entry">
+            <p>by <a class="uk-link-text" href="{{ author.web }}">{{ author.display_name }}</a></p>
+        </section>
+      </div>
+    </div>
+    {% else %}
+    <div>
+      <div class="uk-container uk-padding-large uk-padding-remove-bottom">
+        <h2 class="uk-heading-primary">{{page.title}}</h2>
+        <p class="uk-article-meta">
+          <span uk-icon="calendar"></span> <span class="date">{{page.date | date: "%b %d, %Y "}}</span>
+          <span uk-icon="tag"></span>
+          {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/archive/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        {% assign author = site.authors[page.author] %}
+        <section class="entry">
+            <p>by <a class="uk-link-text" href="{{ author.web }}">{{ author.display_name }}</a></p>
+        </section>
+      </div>
+    </div>
+    <hr class="uk-divider-icon">
+    {% endif %}
+  </div>
+  <div class="uk-section uk-container uk-padding-large">
+    <article class="uk-article">
+      {{content}}
+    </article>
+    <div>
+      {% include post-pagination.html %}
+    </div>
+      {% include disqus.html %}
+  </div>
+  {% include totop.html %}
+</div>
