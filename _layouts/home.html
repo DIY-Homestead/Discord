@@ -18,11 +18,11 @@ layout: default
 
   <div id="" class="toggle-custom uk-section uk-section">
     <div class="uk-container uk-text-center">
-      <h2><a class="uk-link-text" href="{{ site.baseurl }}/blog">Latest from community members</a></h2>
+      <h2><a class="uk-link-text" href="{{ site.baseurl }}/blog">Latest from the community</a></h2>
       <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
         <div>
           <span uk-icon="minus"></span>
-          {% for post in site.posts limit:3 %}
+          {% for post in site.posts limit:1 %}
 
             <h4 class="uk-padding-remove-top"><a class="uk-link-text"href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
             <p class="uk-article-meta">
