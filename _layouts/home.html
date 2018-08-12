@@ -2,7 +2,21 @@
 layout: default
 ---
 <main>
-{% include discord_widget.html %}
+
+  <div id="Join" class="toggle-custom uk-section uk-section">
+    <div class="uk-container uk-text-center">
+        <h2><a class="uk-link-text" href="https://discord.gg/w5wnFKT">Join</a></h2>
+        <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+          <div>
+            <p>Come share your homesteading journey!</p>
+          </div>
+          <div>
+            {% include discord_widget.html %}
+          </div>
+        </div>
+      </div>
+  </div>
+
   <div id="" class="toggle-custom uk-section uk-section">
     <div class="uk-container uk-text-center">
       <h2><a class="uk-link-text" href="{{ site.baseurl }}/blog">Latest from the community</a></h2>
