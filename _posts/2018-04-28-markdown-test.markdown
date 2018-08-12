@@ -8,9 +8,23 @@ author: jpasholk
 
 ## How to write and submit posts
 
-You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  <!--more-->
+You can write regular markdown here and Jekyll will automatically convert it to a nice webpage.  <!--more-->
 
 I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+[Here](https://help.github.com/articles/basic-writing-and-formatting-syntax/#styling-text) is Github's guide on markdown. Since that is where we are hosting the site, it might be a good idea to read this over just to make sure you understand what it can and can't do.
+
+## Submitting Posts
+
+### Easy way
+
+The easy way to submit a post is to simply send a DM to one of the project leads (for now just Jpasholk) on Discord, with a link to the markdown file in a cloud hosted solution of your choice.
+
+### Hard way
+
+The harder way, but more convenient for us maintainers is to clone the repository to your local machine and add the markdown file to the `_posts` directory, and then submit a pull request on the repo. This will allow us to simply merge the pull request once we have read over the post.
+
+## Writing in Markdown
 
 ## Headings
 
@@ -136,13 +150,16 @@ Here you have to use [Liquid](https://help.shopify.com/en/themes/liquid) Tags. R
 
 {% raw %}
 ```liquid
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
+{% highlight javascript linenos %}
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
 {% endhighlight %}
 ```
 {% endraw %}
+
+Okay... so how did I highlight that? You'll have to look at the raw markdown of this on GitHub... ;P
 
 ## Links
 

@@ -15,7 +15,8 @@
   </li>
   {% else %}
   <li class="uk-margin-auto-left">
-    <a href="https://twitter.com/{{site.twitter}}" target="_blank">Follow<span uk-icon="twitter" class="uk-margin-small-left"></span></a>
+    {% assign author = site.authors[page.author] %}
+    <a href="https://twitter.com/{{ author.twitter }}" target="_blank">Follow<span uk-icon="twitter" class="uk-margin-small-left"></span></a>
   </li>
   {% endif %}
 </ul>
